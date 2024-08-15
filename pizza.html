@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order a Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group .toppings {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .form-group .toppings label {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Order a Pizza</h1>
+   
+        <div class="form-group">
+            <label for="size">Pizza Size</label>
+            <select id="size" name="size" required>
+                <option value="">Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">Extra Large</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="crust">Crust Type</label>
+            <select id="crust" name="crust" required>
+                <option value="">Select Crust</option>
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="stuffed">Stuffed Crust</option>
+                <option value="glutenfree">Gluten Free</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="toppings">Toppings</label>
+            <div class="toppings">
+                <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+                <label><input type="checkbox" name="toppings" value="onions"> Onions</label>
+                <label><input type="checkbox" name="toppings" value="sausage"> Sausage</label>
+                <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label>
+                <label><input type="checkbox" name="toppings" value="extra_cheese"> Extra Cheese</label>
+                <label><input type="checkbox" name="toppings" value="black_olives"> Black Olives</label>
+                <label><input type="checkbox" name="toppings" value="green_peppers"> Green Peppers</label>
+                <label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label>
+                <label><input type="checkbox" name="toppings" value="spinach"> Spinach</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <button onclick="window.location.href='confirmorder.html'"> Place Order </button>        
+    </form>
+</div>
+
+</body>
+</html>

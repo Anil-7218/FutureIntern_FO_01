@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Chicken</title>
+</head>
+<body>
+    <h1>Order Your Chicken</h1>
+    <form action="/submit_order" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="type">Type of Chicken:</label><br>
+        <select id="type" name="type" required>
+            <option value="grilled">Grilled</option>
+            <option value="fried">Fried</option>
+            <option value="roasted">Roasted</option>
+            <option value="bbq">BBQ</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <button onclick="window.location.href='confirmorder.html'">Submit Order</button>
+    </form>
+</body>
+</html>

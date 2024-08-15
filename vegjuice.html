@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Juice Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Order Vegetable Juices</h1>
+    </header>
+    <main>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="juice">Select your desired vegetable juice:</label>
+            <select id="juice" name="juice" required>
+                <option value="">-- Select --</option>
+                <option value="Carrot Juice">Carrot Juice</option>
+                <option value="Beetroot Juice">Beetroot Juice</option>
+                <option value="Spinach Juice">Spinach Juice</option>
+                <option value="Celery Juice">Celery Juice</option>
+                <option value="Cucumber Juice">Cucumber Juice</option>
+            </select>
+
+            <label for="size">Select size:</label>
+            <select id="size" name="size" required>
+                <option value="">-- Select --</option>
+                <option value="Small">Small (250ml)</option>
+                <option value="Medium">Medium (500ml)</option>
+                <option value="Large">Large (1L)</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            
+        </form>
+    </main>
+    <button onclick="window.location.href='confirmorder.html'">Submit Order</button>
+</body>
+</html>

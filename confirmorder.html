@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .order-details {
+            margin: 20px 0;
+        }
+        .order-details div {
+            margin-bottom: 10px;
+        }
+        .order-details span {
+            font-weight: bold;
+        }
+        .button-container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="button-container">
+        <button onclick="confirmOrder()">Confirm Order</button>
+    </div>
+</div>
+
+<script>
+   
+    // Function to handle order confirmation
+    function confirmOrder() {
+        alert("Thank you! Your order has been confirmed.");
+        // Here you can add the code to handle the order confirmation logic
+    }
+
+    // Display the order details when the page loads
+    window.onload = displayOrderDetails;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order a Hamburger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .order-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .order-form h1 {
+            text-align: center;
+        }
+        .order-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .order-form input,
+        .order-form select,
+        .order-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .order-form button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="order-form">
+        <h1>Order a Hamburger</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="hamburgerType">Hamburger Type:</label>
+        <select id="hamburgerType" name="hamburgerType" required>
+            <option value="classic">Classic Hamburger</option>
+            <option value="cheese">Cheeseburger</option>
+            <option value="bacon">Bacon Burger</option>
+            <option value="veggie">Veggie Burger</option>
+        </select>
+
+        <label for="extras">Extras:</label>
+        <select id="extras" name="extras" multiple>
+            <option value="lettuce">Lettuce</option>
+            <option value="tomato">Tomato</option>
+            <option value="onion">Onion</option>
+            <option value="pickles">Pickles</option>
+            <option value="bacon">Bacon</option>
+            <option value="cheese">Extra Cheese</option>
+        </select>
+
+        <label for="notes">Special Instructions:</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <button onclick="window.location.href='confirmorder.html'">Submit Order</button>
+    </form>
+
+</body>
+</html>

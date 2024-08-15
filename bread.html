@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Bread</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .order-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        .order-form div {
+            margin-bottom: 1em;
+        }
+        .order-form label {
+            margin-bottom: .5em;
+            color: #333333;
+        }
+        .order-form input, .order-form select, .order-form textarea {
+            width: 100%;
+            padding: .5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .order-form button {
+            padding: 0.7em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="order-form">
+    <h2>Order Bread</h2>
+           <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="bread-type">Bread Type:</label>
+            <select id="bread-type" name="bread-type" required>
+                <option value="">Select a bread</option>
+                <option value="white">White Bread</option>
+                <option value="wholewheat">Whole Wheat Bread</option>
+                <option value="sourdough">Sourdough Bread</option>
+                <option value="rye">Rye Bread</option>
+                <option value="multigrain">Multigrain Bread</option>
+            </select>
+        </div>
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+        <div>
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4"></textarea>
+        </div>
+        <div>
+            <button onclick="window.location.href='confirmorder.html'">Submit Order</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

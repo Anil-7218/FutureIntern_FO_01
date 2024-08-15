@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Scoops Ice Cream Shop</title>
+    <style>
+        /* CSS styles for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #333333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4d00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet Scoops Ice Cream Shop</h1>
+    </header>
+    <div class="container">
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="flavor">Choose Your Flavor:</label>
+                <select id="flavor" name="flavor">
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="mintChocolateChip">Mint Chocolate Chip</option>
+                    <option value="cookieDough">Cookie Dough</option>
+                    <option value="rockyRoad">Rocky Road</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="toppings">Choose Your Toppings:</label>
+                <input type="text" id="toppings" name="toppings" placeholder="E.g., Sprinkles, Chocolate Syrup">
+            </div>
+            <div class="form-group">
+                <label for="container">Select Your Cone or Cup:</label>
+                <select id="container" name="container">
+                    <option value="waffleCone">Waffle Cone</option>
+                    <option value="sugarCone">Sugar Cone</option>
+                    <option value="cakeCone">Cake Cone</option>
+                    <option value="cup">Cup</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="extras">Extras:</label>
+                <input type="text" id="extras" name="extras" placeholder="E.g., Ice Cream Sandwich, Milkshake">
+            </div>
+            <div class="form-group">
+                <label for="deliveryInfo">Delivery Information:</label>
+                <input type="text" id="deliveryInfo" name="deliveryInfo" placeholder="Name, Address, Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="paymentInfo">Payment Information:</label>
+                <input type="text" id="paymentInfo" name="paymentInfo" placeholder="Credit Card Number, Expiry Date, CVV">
+            </div><button > <a href="confirmorder.html">submit order</a></button>
+            
+        </form>
+    </div>
+</body>
+</html>

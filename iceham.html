@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Hamburger Order Form</title>
+    <style>
+        /* CSS styles for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #3399ff;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005cbf;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Order Your Ice Hamburger</h1>
+    </header>
+    <div class="container">
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="burgerType">Choose Your Ice Burger Type:</label>
+                <select id="burgerType" name="burgerType">
+                    <option value="vanilla">Vanilla Burger</option>
+                    <option value="chocolate">Chocolate Burger</option>
+                    <option value="strawberry">Strawberry Burger</option>
+                    <option value="mintChocolateChip">Mint Chocolate Chip Burger</option>
+                    <option value="cookieDough">Cookie Dough Burger</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="toppings">Choose Your Toppings:</label>
+                <input type="text" id="toppings" name="toppings" placeholder="E.g., Sprinkles, Chocolate Chips">
+            </div>
+            <div class="form-group">
+                <label for="extras">Extras:</label>
+                <input type="text" id="extras" name="extras" placeholder="E.g., Whipped Cream, Caramel Sauce">
+            </div>
+            <div class="form-group">
+                <label for="deliveryInfo">Delivery Information:</label>
+                <input type="text" id="deliveryInfo" name="deliveryInfo" placeholder="Name, Address, Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="paymentInfo">Payment Information:</label>
+                <input type="text" id="paymentInfo" name="paymentInfo" placeholder="Credit Card Number, Expiry Date, CVV">
+            </div>
+            <button > <a href="confirmorder.html">submit order</a></button>
+            
+        
+        </form>
+    </div>
+</body>
+</html>
